@@ -11,8 +11,18 @@ fh.close()
 print("Output done")
 
 fh =  open('fibo.txt', "r")
-# For loops
+# For loops using an iterator
 for line in fh.readlines():
     print(line,end='')
+
+
+print("\nOther for loop exmaples\n")
+# Using for loops using range
+for n in range(1,10):
+    print(n)
+
+print("\nAnother example")
+for n in (1,2,3,4,5,7):
+    print(n)
 
 print("Program done!")
