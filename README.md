@@ -1,2 +1,3 @@
 # python_tutorial
-Python Tutorial
+
+This is a Python Tutorial mainly aimed at DevOps Engineers
