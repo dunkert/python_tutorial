@@ -3,10 +3,7 @@ import os
 
 def writeFibonaci(filename,max_int):
     a,b = 0,1
-    
-    if os.path.exists(filename):
-        os.rename(filename,filename+"."+ datetime.now().strftime("%S%M%H%m%d%Y"))
-    
+       
     try:
         fh = open(filename,"w")
         #While loop
@@ -31,5 +28,12 @@ def printFile(filename):
         print("The following file named (",filename,")could not be found")
 
 
-writeFibonaci("fibo2.txt", 40)
-printFile("fibo2.txt")
+
+
+myFile = "fibo2.txt"
+
+if os.path.exists(myFile):
+    os.rename(myFile,myFile+"."+ datetime.now().strftime("%S%M%H%m%d%Y"))
+
+writeFibonaci(myFile, 40)
+printFile(myFile)
