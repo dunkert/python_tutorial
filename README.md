@@ -1,3 +1,4 @@
 # python_tutorial
 
-This is a Python Tutorial mainly aimed at DevOps Engineers
+Exercise files for the python tutorial mainly intended for DevOps engineers.
+See: www.smartereng.com
