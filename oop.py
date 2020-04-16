@@ -6,18 +6,27 @@ __version__ = "1.0.1"
 __maintainer__ = "Daniel Jean-Baptiste"
 __status__ = "Production"
 
-# Pi series
-def pi_series():
-	sum = 0
-	i = 1.0; j = 1
-	while(1):
-		sum = sum + j/i
-		yield 4*sum
-		i = i + 2; j = j * -1
-    
-i = 0
 
-for n in pi_series():
+
+# Pi series
+class series():
+	def __init__(self):
+	 super().__init__()
+	 self.sum = 0
+	 self.i = 1.0; 
+	 self.j = 1
+
+	def pi_series(self):
+		while(1):
+			self.sum = self.sum + self.j/self.i
+			yield 4 * self.sum
+			self.i = self.i + 2; self.j = self.j * -1
+    
+
+i = 0
+p = series()
+
+for n in p.pi_series():
     print(n)
     i += 1
     if i > 30:
