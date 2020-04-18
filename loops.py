@@ -24,12 +24,12 @@ fh =  open('fibo.txt', "r")
 for line in fh.readlines():
     print(line,end='')
 
-print("\nOther for loop exmaples\n")
+print("\nAnother \'for\' loop example\n")
 # Using "for" loops using range
 for n in range(1,10):
     print(n)
 
-print("\nAnother example")
+print("\nAnother example using for")
 for n in (1,2,3,4,5,7):
     print(n)
 
