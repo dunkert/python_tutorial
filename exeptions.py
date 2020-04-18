@@ -11,7 +11,5 @@ filename = "error.logs"
 
 try:
     fh = open(filename,"r")
-#except IOError as e:
-#    print(e)
-except Exception e:
+except IOError as e:
     print(e)
