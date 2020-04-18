@@ -7,30 +7,75 @@ __maintainer__ = "Daniel Jean-Baptiste"
 __status__ = "Production"
 
 
-a,b = 0,1
-fh = open('fibo.txt',"w")
+# For loops examples
 
-# "while" loop
-while b < 40:   
-    fh.writelines(str(b)+"\n")
-    a,b = b, b + a
+for n in (1,2,3,4,5,6):
+	print(n)
+
+print("")
+
+for n in range(1,6):
+	print(n)
+
+print("")
+
+for n in ["apple", "banana", "orange"]:
+	print(n)
+
+print("")
+
+fruits = ["apple", "banana", "orange"]
+for n in fruits:
+	print(n)
+else:
+	print("Ther is no more fruits")
+
+print("")
+
+for x in range(1,6):
+	for y in range(1,6):
+		print("* ",end='')
+	print("")
+
+print("")
+# Let's create a few simple examples using 'while' loops.
+
+
+
+# while loop
+i = 1
+while i < 6:
+	print(i)
+	i+=1
+
+print("")
+
+i = 1
+while i < 6:
+	print(i)
+	if i == 3:
+		break
+	i += 1
+
+print("")
+
+a,b = 0,1
+
+filename = "fibo.txt"
+fh = open(filename,"w")
+
+while b < 40:
+	print("Writting the value ",b," in the file")
+	fh.writelines(str(b)+"\n")
+	a,b = b, b + a
 
 fh.close()
-print("Output done")
 
-fh =  open('fibo.txt', "r")
+print("")
 
-# "for" loops using an iterator
+fh = open(filename, "r")
+
+print("Reading the file:", filename)
+# 'for' loops using an iterator
 for line in fh.readlines():
-    print(line,end='')
-
-print("\nAnother \'for\' loop example\n")
-# Using "for" loops using range
-for n in range(1,10):
-    print(n)
-
-print("\nAnother example using for")
-for n in (1,2,3,4,5,7):
-    print(n)
-
-print("Program done!")
+	print(line,end='')
