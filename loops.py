@@ -65,7 +65,7 @@ filename = "fibo.txt"
 fh = open(filename,"w")
 
 while b < 40:
-	print("Writting the value ",b," in the file")
+	print("Writting the value ",b," in", filename)
 	fh.writelines(str(b)+"\n")
 	a,b = b, b + a
 
