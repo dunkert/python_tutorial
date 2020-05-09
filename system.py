@@ -25,5 +25,8 @@ def main():
     for f in os.listdir():
         print(datetime.datetime.now(),"-",f)
 
+    now = datetime.datetime.now()
+
+    print(now.year,now.month,now.day,now.hour,now.minute,now.second)
 
 if __name__ == "__main__" : main()
